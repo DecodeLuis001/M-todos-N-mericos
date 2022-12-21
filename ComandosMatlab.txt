@@ -1,0 +1,50 @@
+comandos:
+
+--->Basicos:
+ls: muestra los archivos en una determianda carpeta.
+variable = dir: muestra cuantos archivos tenemos en una carpeta.
+variable(numero de .m): muestra información de los documentos.
+variable=dir('*.extención'): muestra todos los archivos con una determinada extención.
+cd ..: se regresa una carpeta.
+cd (Letra inicial+tab): muestra todas las carpetas que empiezan con esa letra.
+pdw: muestra la carpeta en donde esta.
+tic
+	t1=toc : muestra el tiempo de ejecución hasta que se pone toc (segundos).
+edit: mandar a llamar un editor.
+variable=single(numero): cambia el tipo de variable de doble a sencillo.
+ d=int8/16/32/64(numero): delimita el campo de numeros a trabajar.
+ clear variable: elimina una variable.
+ clear all: eliminia todas las variable.
+ clc: limpia la pantalla.
+help + comando: muestra que hace dicho comando.
+
+--->Vectores:
+1) Variable vector(columnas, filas) = valor.
+2) 1:4:20 incrementa de 4 en 4 hasta llegar al 20 o cercano.
+
+
+--->Grafica:
+1) plot(x, y, 'r*-'): x, y son los valores y la función respectivamente.
+	r indica el color; * puntos de interes; - indica que la gráfica sea continua.
+
+>> plot(X, y, 'ro-.') 					edita la grafica.
+>> title('Grafica de seno \omega')
+>> xlabel('x')
+>> ylabel('y')
+>> grid on								agrega la cuadricula a la grafica.
+>> axis([limites en x limites en y])	delimita los intervalos de la gráfica.
+
+>> print('-f1', '-deps', 'Prueba.eps')  graba la figura en forma vectorial, su resolución no se ve afectada.
+-f1: indica que figura se va a convertir.
+-deps: 
+Al ultimo se agrega el nombre del archivo y su extención.
+
+>> print('-f1', '-djpeg90', '-r1600', 'Prueba4.jpg')
+-f1: indica que figura se va a convertir.
+-d extención : 
+-rNumero: indica la resolución de un archivo de formato de imagen. (Mejor resulción de impresión -r400).
+Al ultimo se agrega el nombre del archivo y su extención.
+
+[variable 1 variable 2]: concatena un vector
+
+set(figure, 'Units'): muestra las dimensiones que se le pueden adaptar a una figura.
